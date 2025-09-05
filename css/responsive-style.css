@@ -80,13 +80,13 @@
   section {
     padding: 1.875rem 0;
   }
-  .headrer-scrolled {
+  .header-scrolled {
     height: auto;
   }
 
   .header_wrapper .menu-navbar-nav {
     text-align: center;
-    padding-bottom: 0.9375;
+    padding-bottom: 0.9375rem;
   }
 
   .header_wrapper .nav-item .nav-link {
@@ -182,7 +182,7 @@
     margin: 0;
   }
   /* footer */
-  .footer_wrapper > div {
+  .footer_wrapper .container {
     padding: 0 1.875rem;
   }
 
