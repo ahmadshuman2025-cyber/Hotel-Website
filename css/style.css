@@ -102,21 +102,27 @@ section {
 }
 
 h1 {
-  font-size: 3.75rem;
-  line-height: 4.25rem;
-  font-weight: 700;
   color: var(--text-white);
-  margin-bottom: 1.25rem;
-  text-transform: uppercase;
-  font-family: var(--secondary-font);
+  transition: transform 0.3s ease, color 0.3s ease;
 }
+
 h1:hover {
-  color: tomato;
-  transform: scale(1.1);
-  background: #833ab4;
-  background: linear-gradient(90deg, rgb(69, 252, 243) 1000%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  transform: scale(1.05);
+  color: aqua;
+}
+
+@supports (-webkit-background-clip: text) {
+  h1:hover {
+    background-image: linear-gradient(
+      90deg,
+      #9eb43a 0%,
+      #6e177d 50%,
+      #45fcf3 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 h3 {
