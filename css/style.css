@@ -194,7 +194,9 @@ p {
   display: inline-block;
 }
 .header_wrapper .nav-item .nav-link:hover,
-.header_wrapper .nav-item .nav-link:active {
+.header_wrapper .navbar .nav-link:focus,
+.header_wrapper .nav-item .nav-link:active,
+.header_wrapper .navbar .nav-link[aria-current="page"] {
   color: var(--secondary-color);
 }
 .header_wrapper .nav-item .nav-link::before,
